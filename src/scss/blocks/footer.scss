@@ -1,0 +1,142 @@
+.footer{
+  background-color: $darkGrey;
+  padding: 50px;
+  i{
+    color: $gold;
+    margin-right: 15px;
+  }
+}
+.footer-wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-about{
+  display: grid;
+  grid-template-columns: 98px 1fr;
+  
+}
+.footer-about__text{
+  position: relative;
+  font-weight: 500;
+  color: $grey;
+  font-size: 14px;
+  p{
+    text-transform: uppercase;
+    margin: 22px 0;
+  }
+  span{
+    text-transform: uppercase;
+    color: $gold;
+  }
+}
+.footer-social{
+  margin-top: 50px;
+  i{
+    font-size: 18px;
+    margin-right: 50px;
+    &:hover{
+      color: $grey;
+    }
+  }
+}
+.copyright{
+  position: absolute;
+  color: $grey;
+  bottom: 32px;
+}
+.footer-info{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 22px;
+  font-size: 14px;
+}
+.footer-menu__list{
+  list-style: none;
+  margin: 0;
+  li{
+    padding-bottom: 10px;
+  }
+  a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $gold;
+    &:hover{
+      color: $grey;
+    }
+  }
+}
+
+.footer-contacts__list{
+  margin: 0;
+  list-style: none;
+  font-weight: 500;
+  li{
+    padding-bottom: 8px;
+  }
+  p{
+    color: $grey;
+    margin: 0;
+    padding-bottom: 6px;
+  }
+  a{
+    text-decoration: none;
+    color: $gold;
+    &:hover{
+      color: $grey;
+    }
+  }
+  .footer__phone-link{
+    color: $grey;
+    font-size: 18px;
+    text-decoration: none;
+    &:hover{
+      color: $gold;
+    }
+  }
+}
+.fa-map-marker-alt{
+  margin-top: 2px;
+  vertical-align: top;
+}
+.footer-contacts__map{
+  display:inline-block;
+}
+@media(max-width: 992px){
+  .footer-info{
+    grid-template-columns: 1.3fr 2fr;
+    padding: 22px 10px;
+    font-size: 14px;
+  }
+  .footer-contacts__list .footer__phone-link{
+    font-size: 16px;
+  }
+}
+@media(max-width: 767px){
+  .footer-wrap{
+    grid-template-columns: 1.2fr 1fr;
+  }
+  .footer-info{
+    grid-template-columns: 1fr;
+  }
+  .footer-social i{
+    margin-right: 20px;
+  }
+  .footer-menu{
+    display: none;
+  }
+}
+@media (max-width:576px) {
+  .footer-wrap{
+    grid-template-columns: 1fr;
+  }
+  .footer-info{
+    padding-left: 0px;
+  }
+}
+@media(max-width:400px){
+  .footer-about{
+    grid-template-columns: 1fr;
+  }
+}
+
+

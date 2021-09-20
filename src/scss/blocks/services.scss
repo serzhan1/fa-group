@@ -1,0 +1,131 @@
+.services{
+  padding-top: 12px;
+  margin-bottom: 60px;
+}
+.services__title{
+  text-transform: uppercase;
+  padding: 52px 0;
+}
+.services__item{
+  display: block;
+  height: 650px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.services__item-icon{
+  padding-top: 30px;
+}
+.services__item-title{
+  margin: 18px 0;
+  a{
+    color: $darkGrey;
+    text-decoration: none;
+    &:hover{
+      color: $gold;
+    }
+  }
+}
+.services__item-img{
+  img{
+    width: 100%;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+.services__item-desc{
+  padding-right: 25px;
+  p{
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+.services__item-btn{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  button{
+    padding: 20px;
+    background-color: $gold;
+    border-radius: 2px;
+    border: none;
+    &:hover{
+      background-color: $darkGrey;
+      a{
+        color: $grey;
+      }
+    }
+  }
+  a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+@media(max-width: 1200px){
+  .services__list{
+    gap:20px;
+  }
+  .services__item{
+    margin: 0;
+  }
+}
+@media(max-width: 992px){
+    .services__list{
+      grid-template-columns: 1fr 1fr;
+    }
+    .services__item{
+      height: 700px;
+      margin-bottom: 30px;
+    }
+}
+@media(max-width: 767px){
+  .services__list{
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+  }
+  .services__item{
+    height: 650px;
+    margin: 10px;
+  }
+}
+@media(max-width: 667px){
+  .services__item{
+    height: 600px;
+  }
+}
+@media(max-width: 450px){
+  .services{
+    margin-bottom: 40px;
+  }
+  .services__list{
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+  .services__item{
+    text-align: center;
+    height: auto;
+    margin: 10px;
+  }
+  .services__item-desc{
+    text-align: center;
+  }
+  .services__item-btn{
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 390px){
+  .services__list{
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+  .services__item{
+    height: auto;
+    margin: 10px;
+  }
+}

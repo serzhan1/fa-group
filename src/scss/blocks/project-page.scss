@@ -1,0 +1,224 @@
+.project{
+  display: block;
+  padding-top: 35px;
+  margin-bottom: 95px;
+  color: $darkGrey;
+}
+.project__title{
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.project__info{
+  font-weight: 500;
+}
+.project__description{
+  letter-spacing: .49px;
+  line-height: 18px;
+}
+.project__jobs{
+  margin-top: 45px;
+}
+.jobs__title{
+  font-weight: 600;
+  margin-bottom: 23px;
+}
+.project__stats{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 45px;
+}
+.stats-title{
+  font-size: 14px;
+  font-weight: 400;
+}
+.stats-desc{
+  font-weight: 600;
+}
+.project-wrap{
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.project__slider{
+  float: left;
+  width: 65%;
+}
+.project__info{
+  float: right;
+  width: 30%;
+}
+.project__about-text{
+  display: block;
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: .1px;
+}
+.related-projects{
+  background-color: $darkGrey;
+  border-top: 2px solid $gold;
+}
+.related-proj-list{
+  padding-top: 20px;
+}
+.project-page-btn{
+  text-align: center;
+  padding-bottom: 52px;
+  margin-top: 50px;
+  button{
+    padding: 17px 30px;
+    padding-left: 10px;
+    background-color: $gold;
+    border-radius: 2px;
+    border: none;
+    &:hover{
+      background-color: $darkGrey;
+      border: 1px solid $gold;
+      a{
+        color: $grey;
+      }
+    }
+  }
+  a{
+    font-size: 14px;
+    color: $darkGrey;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+.arrow-link{
+  margin-left: 5px;
+  margin-right: 10px;
+}
+#primary-slider{
+  margin-bottom: 5px;
+}
+#secondary-slider{
+  .splide__slide{
+    opacity: .5;
+    &.is-active{
+      opacity: 1;
+      border: none;
+    }
+    
+  }
+}
+
+.slider--modal{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.modal-content{
+  display: block;
+  padding: 60px 80px;
+  
+  height: 100%;
+  cursor:grab;
+  &:active{
+    cursor: grabbing;
+  }
+  .slick-list,
+  .slick-track{
+    height: 100%;
+  }
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 15px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.4;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: $darkGrey;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  .text-area{
+    textarea{
+      width: 100%;
+      border: 1px solid $darkGrey;
+      outline: none;
+      padding: 10px;
+      margin: 0;
+      margin-bottom: 30px;
+      resize: none;
+      color: $darkGrey;
+      font-weight: 600;
+    }
+  }
+  @media(max-width:992px){
+    .close{
+      right: 15px;
+      top: 15px;
+    }
+    .slider--modal{
+      // height: 550px;
+      .slick-list,
+      .slick-track{
+        height: 100%;
+      }
+    }
+  }
+
+
+  @media(max-width:767px){
+    .slider--modal{
+      padding-top: 60px;
+      height: 385px;
+      .slick-list,
+      .slick-track{
+        height: 100%;
+      }
+    }
+    .modal-content{
+      margin-top: 0;
+      padding: 0 15px;
+    }
+    .project__slider{
+      width: 100%;
+      clear: both;
+    }
+    .project__info{
+      margin-top: 40px;
+      width: 100%;
+      clear: both;
+    }
+  }
+  
+  @media(max-width: 579px){
+    .slider--modal{
+      padding-top: 60px;
+      height: 350px;
+      .slick-list,
+      .slick-track{
+        height: 100%;
+      }
+    }
+    .modal-content{
+      margin-top: 0;
+      padding: 0 10px;
+    }
+  }

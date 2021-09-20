@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@import "variables";
+@import "mixins"; 
+@import "normalize";
+@import "reset";
+@import "fonts";
+@import "global";
+
+
+// <BLOCKS> ===================================================
+
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/sliders.scss";
+@import "blocks/about-desc.scss";
+@import "blocks/services-desc.scss";
+@import "blocks/works.scss";
+@import "blocks/products.scss";
+@import "blocks/contact-form.scss";
+@import "blocks/footer.scss";
+
+// About us page -------------------
+@import "blocks/about-us.scss";
+// ---------------------------------
+
+// Services page -------------------
+@import "blocks/services.scss";
+// ---------------------------------
+
+// Projects page -------------------
+@import "blocks/projects.scss";
+// ---------------------------------
+
+// Project template page ----------
+@import "blocks/project-page.scss";
+//---------------------------------
+
+// </BLOCKS> ==================================================
+
+.title-border{
+  padding-bottom: 14px;
+  border-bottom: 2px solid $gold;
+}

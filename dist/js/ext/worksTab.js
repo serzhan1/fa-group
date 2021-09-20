@@ -1,0 +1,1 @@
+$(".works__list-item").click((function(s){s.preventDefault(),$(this).addClass("active").siblings().removeClass("active"),$($(this).children().attr("href")).addClass("active").siblings().removeClass("active"),$(".works__info").slick("refresh")}));

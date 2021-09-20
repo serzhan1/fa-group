@@ -1,0 +1,90 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.contact-form{
+  background-color: $gold;
+  text-align: center;
+  padding: 38px;
+}
+.contact-form__title{
+  text-align: center;
+  color: $darkGrey;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.form__inputs{
+  display: flex;
+  justify-content: center;
+}
+input[type=text],textarea{
+  background-color: transparent;
+  padding: 20px 0;
+  margin: 15px;
+  border: none;
+  border-bottom: 1px solid #111;
+  color: $black;
+  width: 360px;
+  font-size: 14px;
+  text-transform: uppercase;
+  &::placeholder{
+    color:$black;
+    font-weight: 600;
+  }
+
+}
+.contact-form__btn{
+  background-color: $darkGrey;
+  border:1px solid transparent;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $gold;
+  padding: 18px 136px;
+  margin-top: 10px;
+  font-weight: 600;
+  margin-bottom: 27px;
+  &:hover{
+    background-color: $gold;
+    padding: 18px 136px;
+    border: 1px solid $darkGrey;
+    color: $darkGrey;
+  }
+}
+.response__title{
+  h1{
+    font-weight: 600;
+    padding: 70px 0;
+    color: $darkGrey;
+  }
+  display: none;
+}
+
+@media (max-width:576px) {
+  .form__inputs{
+    display: block;
+  }
+  input[type=text]{
+    width: 300px;
+  }
+  .contact-form__btn{
+    padding: 18px 86px;
+    &:hover{
+      padding: 18px 86px;
+    }
+  }
+}
+@media(max-width: 400px){
+  input[type=text]{
+    width: 250px;
+    padding: 10px;
+  }
+}
